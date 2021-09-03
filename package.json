@@ -1,0 +1,18 @@
+{
+  "name": "calc-sockets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "calculadora-lanza2": "^1.0.1",
+    "express": "^4.17.1",
+    "ws": "^8.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

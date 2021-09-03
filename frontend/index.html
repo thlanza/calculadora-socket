@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo">Calculadora</h1>
+    <div id="status">Conectando...</div>
+    <form id="message-form" action="#" method="POST">
+    <div class="operando">
+    <label for="first">Primeiro operando</label>
+    <input type="number" id="first" name="first" required>
+    </div>
+    <div class="operator_set">
+    <div class="operator soma">
+    <input type="radio" id="r1" name="operation" value="+">
+    <label for="mais">+ Soma</label>
+    </div>
+    <br />
+    <div class="operator">
+    <input type="radio" id="r2" name="operation" value="-">
+    <label for="mais">- Subtração</label>
+    </div>
+    <br />
+    <div class="operator">
+    <input type="radio" id="r3" name="operation" value="*">
+    <label for="mais">* Multiplicação</label>
+    </div>
+    <br />
+    <div class="operator">
+    <input type="radio" id="r4" name="operation" value="/">
+    <label for="mais">&#247; Divisão</label>
+    </div>
+    <br />
+    </div>
+    <div class="operando">
+    <label for="first">Segundo operando</label>
+    <input type="number" id="second" name="second" required>
+    </div>
+    <div class="caixa_flex">
+    <button class="button buttonSubmit" type="submit">Fazer a operação</button>
+    <button class="button buttonClose" type="button" id="close">Finalizar a conexão</button>
+    </div>
+    </form>
+    <ul id="messages"></ul>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
